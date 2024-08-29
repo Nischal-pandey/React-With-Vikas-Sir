@@ -1,0 +1,88 @@
+/* Sidebar Menu Styles */
+body{
+  background-color: aquamarine;
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #b12424;
+  padding: 20px;
+  transition: width 0.5s;
+}
+
+.navigation.open {
+  width: 300px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  margin-bottom: 20px;
+}
+
+.list-item.active {
+  background-color: #af1a1a;
+}
+
+.list-item a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.list-item a:hover {
+  background-color: #0c97ca;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.text {
+  font-size: 18px;
+}
+
+/* Projects List Styles */
+
+.projects {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects li {
+  margin-bottom: 10px;
+}
+
+.projects a {
+  color: #7a1919;
+  text-decoration: none;
+}
+
+.projects a:hover {
+  color: #ccc;
+}
+body {
+  animation: background-color 2s infinite; /* animate background color */
+}
+
+@keyframes background-color {
+  0% {
+    background-color: #f2f2f2; /* start with light gray */
+  }
+  50% {
+    background-color: #ffa117; /* change to orange at 50% */
+  }
+  100% {
+    background-color: #f2f2f2; /* end with light gray */
+  }
+}

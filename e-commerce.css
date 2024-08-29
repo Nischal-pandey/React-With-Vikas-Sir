@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7c99f1;
+}
+
+.main {
+    max-width: 700px;
+    color: #000000;
+    margin:  auto;
+    padding: 10px;
+    background-color: #7c99f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 55px;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    border-radius: 10px 100px / 120px   ;
+    font-family: georgia, serif;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Add a pointer cursor to indicate that the headings are clickable */
+}

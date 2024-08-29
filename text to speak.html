@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech in JavaScript</title>
+    <link rel="stylesheet" href="text to speak.css">
+    <script src="script.js" type="module"></script>
+</head>
+
+<body>
+    <div class="container">
+        <label for="text">Text to speak:</label>
+        <textarea id="text"></textarea>
+        <button id="speak">Speak Text</button>
+    </div>
+    <script>
+        const textEL = document.getElementById('text');
+        const speakEL = document.getElementById('speak');
+
+        speakEL.addEventListener('click', speakText);
+        function speakText() {
+
+            // stop any speaking in progress
+            window.speechSynthesis.cancel();
+
+            const text = textEL.value;
+            const utterance = new SpeechSynthesisUtterance(text);
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+
+</html>

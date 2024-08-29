@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bubbles span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: bubble 5s infinite;
+}
+
+.bubbles span.one {
+  animation-delay: 0s;
+}
+
+.bubbles span.two {
+  animation-delay: 1s;
+}
+
+.bubbles span.three {
+  animation-delay: 2s;
+}
+
+.bubbles span.four {
+  animation-delay: 3s;
+}
+
+.bubbles span.five {
+  animation-delay: 4s;
+}
+
+.bubbles span.six {
+  animation-delay: 5s;
+}
+
+.bubbles span.seven {
+  animation-delay: 6s;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.5);
+    opacity: 1;
+  }
+}
+
+.bubbles.animate span {
+  animation: bubble-animate 2s infinite;
+}
+
+@keyframes bubble-animate {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="button"] {
+  width: 50px;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

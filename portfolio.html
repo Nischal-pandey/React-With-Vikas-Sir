@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sidebar Menu</title>
+  <!-- <meta http-equiv="refresh" content="7; url='[8](https://www.w3docs.com)'"> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="portffolio.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+
+  <video class="video" autoplay muted loop>
+    <source src="background.mp4">
+  </video>
+  <div class="profile-image neon-bg">
+    <img src="Nischal2.jpg" alt="Profile Image">
+  </div>
+  <div class="container">
+
+    <div class="navigation">
+      <div class="menu-toggle"></div>
+      <ul class="list">
+        <li class="list-item active" style="--color:#f44336"><a href="index.html">
+            <span class="icon">
+              <ion-icon name="home">
+                << /ion-icon>
+            </span>
+            <span class="text"><a href="portfolio.html">Home</a></span>
+          </a></li>
+        <li class="list-item" style="--color:#ffa117"><a href="array.html">
+            <span class="icon">
+              <ion-icon name="person"></ion-icon>
+            </span>
+            <span class="text">About</span>
+          </a>
+          <ul class="projects" style="display: none;">
+            <li><a href="project1.html">Project 1: Website Development</a></li>
+            <li><a href="project2.html">Project 2: Mobile App Development</a></li>
+            <li><a href="project3.html">Project 3: E-commerce Website</a></li>
+            <li><a href="project4.html">Project 4: Web Application Development</a></li>
+            <li><a href="project5.html">Project 5: UI/UX Design</a></li>
+          </ul>
+        </li>
+        <li class="list-item" style="--color:#0fc70f"><a href="contact.html">
+            <span class="icon">
+              <ion-icon name="call"></ion-icon>
+            </span>
+            <span class="text">skill</span>
+          </a></li>
+        <li class="list-item" style="--color:#2196f3"><a href="portfolio.html">
+            <span class="icon">
+              <ion-icon name="grid"></ion-icon>
+            </span>
+            <span class="text">Portfolio</span>
+          </a></li>
+        <li class="list-item" style="--color:#b145e9"><a href="blog.html">
+            <span class="icon">
+              <ion-icon name="pencil"></ion-icon>
+            </span>
+            <span class="text">Education</span>
+          </a></li>
+
+        <li class="list-item" style="--color:#b145e9"><a href="#">
+            <span class="icon">
+              <ion-icon name="information-circle"></ion-icon>
+            </span>
+            <span class="text">Created By Nischal</span>
+          </a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Nischal the web-Developer</h1>
+    </div>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.onclick = () => {
+      navigation.classList.toggle('open');
+    }
+
+    const listItems = document.querySelectorAll('.list-item');
+    listItems.forEach(item => {
+      item.onclick = () => {
+        listItems.forEach(item => item.classList.remove('active'));
+        item.classList.add('active');
+      }
+    })
+
+    const aboutItem = document.querySelector('.list-item:nth-child(2)');
+    const projectsList = document.querySelector('.projects');
+
+    aboutItem.addEventListener('mouseover', () => {
+      projectsList.style.display = 'block';
+    });
+
+    aboutItem.addEventListener('mouseout', () => {
+      projectsList.style.display = 'none';
+    });
+
+
+    const aboutItem = document.querySelector('.list-item:nth-child(2)');
+
+    aboutItem.onclick = () => {
+      listItems.forEach(item => item.classList.remove('active'));
+      aboutItem.classList.add('active');
+    }
+  </script>
+
+  <footer><input type="time"></footer>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>instrument1</button>
+    <button>instrument2</button>
+    <button>instrument3</button>
+     
+    
+
+    <script>
+
+         let btns=document.querySelectorAll("button");
+        // console.log(btn);
+        function makesound(key){
+
+
+            switch(key){
+                
+                case "instrument1":
+                let music1=new Audio
+                ("song1.mp3");
+                 music1.play();
+                    setTimeout(() => {
+                      music1.pause(); 
+                    },5000);
+                    break;
+
+                
+                    case "instrument2":
+                let music2=new Audio
+                ("song2.mp3");
+                 music2.play();
+                    setTimeout(() => {
+                      music2.pause(); 
+                    },3000);
+                    break;
+
+                    case "instrument3":
+                let music3=new Audio
+                ("song3.mp3");
+                 music3.play();
+                    setTimeout(() => {
+                      music3.pause(); 
+                    },3000);
+                    break;
+
+
+                 
+
+                    default:
+                        let music=new Audio('song1')
+                        music.play();    
+            }
+        }
+              
+        for(let i=o;i<btns.length;i++){
+            let key=btns[i].innerHTML;
+            // console.log("key----",key);
+            btns[i].addEventListener("click",
+            function(){
+                // let key=btns[i].innerHTML;
+                makesound(key);
+            });
+            
+        }
+
+        // for(let i=0;btns.length;i++){
+        //     btns{i}addEventListener("click",function(){
+
+        //     })
+        // }
+
+    </script>
+</body>
+</html>

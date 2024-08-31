@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#main-char {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-block-start: 45px;
+}
+
+.first-div {
+    display: flex;
+    justify-content: center;
+}
+
+.img1 {
+    height: 17px;
+    width: 17px;
+    color:  rgb(13, 91, 81);;
+    display: flex;
+}
+
+p {
+    color: rgb(13, 91, 81);
+    display: flex;
+    gap: 30px;
+}
+
+.second-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img2 {
+    height: 17px;
+    width: 17px;
+    display: flex;
+
+}
+
+.third-div {
+    display: flex;
+    
+    align-items: center;
+}
+.img3{
+    height: 13px;
+    width: 12px;
+    
+}
+.fourth-div{
+    display: flex;
+    gap: 7px;
+    flex-direction: row;
+    align-items: center;        
+}
+.icon1{
+    height: 10px;
+    width: auto;
+}
+.icon2{
+    height: 10px;
+    width: auto;
+}
+.icon3{
+    height: 11px;
+    width: auto;
+}
+.icon4{
+    height: 13px;
+    width:  auto;
+}
+.icon5{
+    height: 12px;
+    width: auto;
+}
+
+.main-char2{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-block-start: 45px;
+}
+
+.fifth-div {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+
+}
+.img4{
+    height: 35px;
+    width: auto;
+    display: flex;
+    vertical-align: top;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #666;
+  }

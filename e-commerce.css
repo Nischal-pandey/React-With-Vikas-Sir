@@ -1,26 +1,242 @@
+/* Basic styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #7c99f1;
 }
 
-.main {
-    max-width: 700px;
-    color: #000000;
-    margin:  auto;
-    padding: 10px;
-    background-color: #7c99f1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    gap: 55px;
-    box-shadow: 10px 5px 5px rgb(0, 0, 0);
-    border-radius: 10px 100px / 120px   ;
-    font-family: georgia, serif;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-h1 {
+/* Header styles */
+header {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact {
+    float: right;
+}
+
+.contact img {
+    height: 20px;
+    margin-right: 10px;
+    transition: transform 0.3s; 
+}
+.contact img:hover {
+    transform: scale(1.2); /* zoom in by 20% on hover */
+  }
+.contact button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button {
+    transition: transform 0.3s; /* add a transition effect */
+  }
+  
+  button:hover {
+    transform: scale(1.1); /* increase size by 10% on hover */
+  }
+  
+  button:active {
+    transform: scale(0.9); /* decrease size by 10% on click */
+  }
+
+/* Hero styles */
+.hero {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.hero-content {
+    float: left;
+    width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    cursor: pointer; /* Add a pointer cursor to indicate that the headings are clickable */
 }
+
+.hero-content button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-image {
+    float: right;
+    width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+/* About styles */
+.about {
+    padding: 50px 0;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+/* Services styles */
+.services {
+    padding: 50px 0;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.service img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    line-height: 1.6;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.video {
+    width: 80vw; /* 80% of the viewport width */
+    height: 60vh; /* 60% of the viewport height */
+    object-fit: cover;
+}
+footer {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    margin-top: 40px;
+    color: #333;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .footer-section {
+    width: calc(25% - 20px);
+    margin-right: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons li {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
